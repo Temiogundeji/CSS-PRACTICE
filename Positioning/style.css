@@ -1,0 +1,19 @@
+body{
+    background-color:#fff;
+}
+#box{
+    bottom:400px;
+    top:100px;
+    background-color:rgba(85, 235, 39, 0.719);
+    height:200px;
+    width:250px;
+    padding:10px;
+} 
+#box2{
+    bottom:0;
+    top:100px;
+    background-color:rgba(238, 15, 227, 0.205);
+    height:200px;
+    width:250px;
+    padding:10px;
+} 
