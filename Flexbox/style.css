@@ -1,0 +1,27 @@
+html{
+    box-sizing:border-box;
+}
+body{
+    margin:0 auto;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    line-height:1.5;
+    padding:0 auto;
+    vertical-align: baseline;
+    width: 100%;
+}
+h1,h2{
+    color:rgb(48, 46, 46);
+    margin-bottom:3%;
+}
+p{
+    color:#888;
+}
+header{
+    padding:5% 10% 5% 10%;
+}
+#contents{
+    width:80%;
+    margin:0 auto;
+}
