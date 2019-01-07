@@ -19,7 +19,32 @@ p{
     color:#888;
 }
 header{
-    padding:5% 10% 5% 10%;
+    padding:0% 0% 5% 10%;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+}
+#navbar #title{
+    align-self: flex-start;
+}
+#navbar #nav-links{
+    align-self: flex-end;
+}
+#navbar ul{
+    display: flex;
+    margin:0 auto;
+    padding:2% 5% 5% 2%;
+}
+#navbar #title{
+    padding-left:0;
+}
+#navbar ul li{
+    display: inline;
+}
+#navbar ul li a{
+    /* padding:2%; */
+    margin-right:2%;
 }
 #contents{
     width:80%;
