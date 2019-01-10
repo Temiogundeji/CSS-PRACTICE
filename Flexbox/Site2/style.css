@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    margin:0 auto;
+}
+nav{
+    box-shadow: rgba((rgb(0, 0, 0)), rgb(0, 0, 0), rgb(0, 0, 0), 0.5) 5px 5px;
+    position:static;
+}
+nav ul{
+    background-color:rgb(19, 18, 18); 
+    display: inline-flex;
+    margin:0;
+    padding:1%;
+    width:100%;
+}
+nav ul li{
+    background-color: blue;
+    list-style:none;
+    padding:4px;
+    flex:1 0 auto;
+}
+nav ul li a{
+    text-decoration:none;
+    color: rgb(138, 132, 132);
+}
+/* li:nth-child(1) {
+     order: 1; 
+}
+li:nth-child(3) {
+    order: 1;
+} */
+
+
+
