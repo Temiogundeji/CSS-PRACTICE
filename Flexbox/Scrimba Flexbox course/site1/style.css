@@ -1,14 +1,22 @@
 .container {
     border: 5px solid #ffcc5c;
     display:flex;
-    flex-direction:row;
-    /* justify-content: center; */
+    flex-wrap:wrap;
+    /* height:100%;
+    align-items: center; */
   }
+  /* Applying flex property to any site element we want to adjust by the size of the viewport. */
  .home{
-    flex:1;
+    /* flex:1; */
+    flex-basis: 300px;
+    flex-grow:0;
+    /* align-self:flex-end; */
 }
 .logout{
-    flex:1;
+    /* align-self:flex-start; */
+    flex-basis:300px;
+    flex-grow: 0;
+    /* flex:1; */
 }
 input[type="text"]{
     width:inherit;
@@ -25,6 +33,7 @@ input[type="text"]{
   html, body {
     background-color: #ffeead;
     margin: 10px;
+    height: 100%;
   }
   
   .container > div:nth-child(1) {
