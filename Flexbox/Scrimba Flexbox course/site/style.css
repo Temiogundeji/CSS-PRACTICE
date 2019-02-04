@@ -19,21 +19,28 @@ nav > ul li a{
     color:#758483;
 }
 .banner{
+    color:rgb(243, 243, 243);
+    font-family:Helvetica,Arial, sans-serif, 'Times New Roman', Times, serif;
     padding:5%;
     text-align: center;
     background:linear-gradient(45deg, blue, red);
+    margin-bottom:5%;
 }
 .main{
     display:flex;
     flex-direction: row;
     height:100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.content{
+.contents{
+    background-color:#ccc;
+    border-radius:10px;
     flex:2 0 2;
     padding:1%;
 }
 aside{
+    background-color:#ccc;
+    border-radius:10px;
     flex:2 0 1;
     padding:1%;
 }
