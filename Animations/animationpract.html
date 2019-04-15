@@ -56,6 +56,7 @@
             display: flex;   
         }
         div.boxes{
+            border: 5px dotted #000;
             flex:1;
             height: 200px;
             width:200px;
@@ -86,6 +87,7 @@
             background-color:#0111E3;
             animation-name: rotateer;
             animation-duration: 2s;
+            animation-delay: 2s;
             animation-iteration-count: infinite;
         }
         div#box5{
@@ -95,14 +97,14 @@
             background-color:rgb(255, 17, 77);
         }
         @keyframes rotate{
-            0%{
-                transform: translateX(-20px);
+            /*0%{
+                 transform: translateX(-20px);
             }
             10%{
                 transform:translateY(-400px);
-            }
+            } */
             50%{
-                transform: scale(180deg);
+                transform: scale(-2);
             }
             100%{
                 transform:rotate(180deg);
@@ -110,13 +112,10 @@
         }
         @keyframes rotateer{
             0%{
-                transform:translateX(-45deg);
+                /* transform:rotate(45deg); */
             }
             45%{
-                transform:translateY(45deg);
-            }
-            90%{
-                transform:translateX(45deg);
+                transform:translateY(-45deg);
             }
             100%{
                 transform:translateZ(-45deg);
