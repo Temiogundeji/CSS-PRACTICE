@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="fir" class="box">
+
+        </div>
+        <div id="sec" class="box">
+            
+        </div>
+        <div id="thir" class="box">
+            
+        </div>
+    </div>
+
+    <style>
+        .container{
+            display:flex;
+            height:100vh;
+            justify-content: space-around;
+            align-items:center;
+            max-width:80%;
+            margin:auto;
+            background-color:#c7be6b;
+        }
+        .box{
+            animation-name: drive;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            overflow-x: hidden;
+            height:300px;
+            width:300px;
+            background:linear-gradient(45deg, blue , green);
+            border-radius:100%;
+        }
+        @keyframes drive{
+            /* from{transform:translateX(0px);}
+            to{transform:translateX(400px);
+            opacity:-5;} */
+            0% {transform: translateX(100px) rotate(0);}
+            20% {transform: translateX(-10px) rotate(-0.5turn);}
+            100% {transform: translateX(450px) rotate(2turn);}
+        }
+    </style>
+</body>
+</html>
