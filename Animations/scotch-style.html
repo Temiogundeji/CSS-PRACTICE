@@ -52,7 +52,7 @@
         }
         nav.main-nav{
             background-color:#000;
-            box-shadow: rgba(0,0,0,0.1) 2px 5px 5px 10px;
+            box-shadow:  0 5px 0 rgba(0,0,0,0.1);
             margin-top:0;
             position: relative;
             top: 0px;
@@ -68,6 +68,7 @@
             margin-right: auto;
         }
         nav.main-nav ul li a{
+            line-height:2.0;
             text-decoration: none;
             color:#fff;
             padding:10px;
@@ -82,12 +83,41 @@
         div.container section.aside{
             flex:0 0 20%;
         }
+        div.container section.aside ul{
+            color:#fff;
+            background-color:#f1122c;
+           list-style-type:none;
+           line-height:2.0;
+        }
+        div.container section.aside ul li a{
+            text-decoration: none;
+            color:#fff;
+            height:50vh;
+        }
+        div.container section.main {
+            flex:1 1 60%;
+        }
         section.main p{
             line-height:2.0;
         }
+        body .fixed-nav nav{
+            position:fixed;
+        }
     </style>
     <script>
-        
+        const  navbar = document.querySelector('nav.main-nav');
+        let topOfNav = navbar.offsetTop;
+        function fixNav(){
+        if(window.scrollY >= topOfNav){
+            document.body.style.paddingTop = navbar.offsetHeight + 'px';
+            document.body.classList.add('fixed-nav');
+        }
+        else{
+            document.body.classList.remove('fixed-nav');
+            document.body.style.paddingTop = 0 + 'px';
+        }
+        }
+        window.addEventListener('scroll', fixNav);
     </script>
 </body>
 </html>

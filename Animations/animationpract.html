@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="boxes">
+            1
+        </div>
+        <div id="box2" class="boxes">
+            1
+        </div>
+        <div id="box3" class="boxes">
+            1
+        </div>
+        <div id="box4" class="boxes">
+                2
+        </div>
+        <div id="box5" class="boxes">
+            2
+        </div>
+        <div id="box6" class="boxes">
+            2
+        </div>
+    </div>
+    <!-- <div class="containers">
+            <div id="box4" class="boxes">
+                2
+            </div>
+            <div id="box5" class="boxes">
+                2
+            </div>
+            <div id="box6" class="boxes">
+                2
+            </div>
+        </div> -->
+
+    <style>
+        body{
+            height:100vh;
+            max-width:80%;
+            margin: 20% auto;
+            overflow-y:hidden;
+        }
+        div.container{
+            display: flex;   
+            flex-direction: row;
+            align-items:center;
+            justify-content:center;
+        }
+        div.containers{
+            display: flex;   
+        }
+        div.boxes{
+            flex:1;
+            height: 200px;
+            width:200px;
+        }
+        div#box1{
+            background-color:#0111E3;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        div#box2{
+            background-color:#c9c914;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        div#box3{
+            background-color:rgb(255, 17, 77);
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+        }
+        div#box4{
+            background-color:#0111E3;
+            animation-name: rotateer;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        div#box5{
+            background-color:#c9c914;
+        }
+        div#box6{
+            background-color:rgb(255, 17, 77);
+        }
+        @keyframes rotate{
+            0%{
+                transform: translateX(-20px);
+            }
+            10%{
+                transform:translateY(-400px);
+            }
+            50%{
+                transform: scale(180deg);
+            }
+            100%{
+                transform:rotate(180deg);
+            }
+        }
+        @keyframes rotateer{
+            0%{
+                transform:translateX(-45deg);
+            }
+            45%{
+                transform:translateY(45deg);
+            }
+            90%{
+                transform:translateX(45deg);
+            }
+            100%{
+                transform:translateZ(-45deg);
+            }
+        }
+    </style>
+</body>
+</html>
